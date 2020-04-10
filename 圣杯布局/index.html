@@ -1,0 +1,52 @@
+<!--
+ * @author: XiongYi
+ * @Date: 2020-03-25 17:41:24
+ * @describe: 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .middle {
+      background-color: red;
+      grid-area: middle;
+    }
+
+    .left {
+      background-color: yellowgreen;
+      grid-area: left;
+    }
+
+    .right {
+      background-color: violet;
+      grid-area: right;
+    }
+
+    .content {
+      width: 400px;
+      height: 200px;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: "left middle right";
+    }
+
+    .content>div {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content">
+    <div class="middle">middle 中间</div>
+    <div class="left">left 左边</div>
+    <div class="right">right 右边</div>
+  </div>
+</body>
+
+</html>
